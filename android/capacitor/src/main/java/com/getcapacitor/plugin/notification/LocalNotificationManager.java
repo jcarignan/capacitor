@@ -100,7 +100,7 @@ public class LocalNotificationManager {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
       CharSequence name = "Default";
       String description = "Default";
-      int importance = android.app.NotificationManager.IMPORTANCE_DEFAULT;
+      int importance = android.app.NotificationManager.IMPORTANCE_MAX;
       NotificationChannel channel = new NotificationChannel(DEFAULT_NOTIFICATION_CHANNEL_ID, name, importance);
       channel.setDescription(description);
       // Register the channel with the system; you can't change the importance
